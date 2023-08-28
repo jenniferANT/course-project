@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/B3.css">
+    <title>Course</title>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <caption>Các khóa học
+                <select name="mucGia" class="select_list" onchange="filter(this)" placeholder="Mức giá">
+                    <option value="0">Tất cả</option>
+                    <option value="1">
+                        <= 100000</option>
+                    <option value="2">100000 - 250000</option>
+                    <option value="3">250000 - 500000</option>
+                    <option value="4">>= 500000</option>
+                </select>
+            </caption>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="chonhet"></th>
+                    <th>Khóa học</th>
+                    <th>Học phí/buổi</th>
+                    <th>Số buổi</th>
+                    <th>Thành Tiền</th>
+                </tr>
+            </thead>
+            <tbody id="listProducts">
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="reverseAttribute(this)"></td>
+                    <td>
+                        <div>Quản lý tài chính</div>
+                    </td>
+                    <td>70000</td>
+                    <td><input type="number" value="0" class="quantity" onchange="calculateTotal(this)"></td>
+                    <td class="thanhTien"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="reverseAttribute(this)"></td>
+                    <td>
+                        <div>Sử dụng AI/PTS</div>
+                    </td>
+                    <td>150000</td>
+                    <td><input type="number" value="0" class="quantity" onchange="calculateTotal(this)"></td>
+                    <td class="thanhTien"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="reverseAttribute(this)"></td>
+                    <td>
+                        <div>Lập trình cơ bản</div>
+                    </td>
+                    <td>600000</td>
+                    <td><input type="number" value="0" class="quantity" onchange="calculateTotal(this)"></td>
+                    <td class="thanhTien"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="reverseAttribute(this)"></td>
+                    <td>
+                        <div>Kỹ năng Research</div>
+                    </td>
+                    <td>950000</td>
+                    <td><input type="number" value="0" class="quantity" onchange="calculateTotal(this)"></td>
+                    <td class="thanhTien"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="reverseAttribute(this)"></td>
+                    <td>
+                        <div>Marketing</div>
+                    </td>
+                    <td>300000</td>
+                    <td><input type="number" value="0" class="quantity" onchange="calculateTotal(this)"></td>
+                    <td class="thanhTien"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="reverseAttribute(this)"></td>
+                    <td>
+                        <div>Thương mại điện tử</div>
+                    </td>
+                    <td>280000</td>
+                    <td><input type="number" value="0" class="quantity" onchange="calculateTotal(this)"></td>
+                    <td class="thanhTien"></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" class="chon" checked onchange="reverseAttribute(this)"></td>
+                    <td>
+                        <div>Viết chữa lành</div>
+                    </td>
+                    <td>120000</td>
+                    <td><input type="number" value="0" class="quantity" onchange="calculateTotal(this)"></td>
+                    <td class="thanhTien"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="font-weight: bold; text-transform: uppercase;">Tổng</td>
+                    <td id="tong">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="cart">
+        </table>
+    </div>
+    <script src="../JS/B3.js"></script>
+</body>
+
+</html>

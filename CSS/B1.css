@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(102, 112, 110, 0.2);
+}
+
+
+
+#anh {
+    max-width: 1000px;
+    width: 700px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #aaa;
+}
+
+
+.container {
+    margin-top: 33px;
+    text-align: center;
+}
+
+.img_container {
+    position: relative;
+    display: inline-block;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+.prev_btn,
+.next_btn {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 8px;
+    margin: 9px;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: rgb(82, 76, 69, 0.2);
+    display: inline-block;
+}
+
+.prev_btn {
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.next_btn {
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.so_luong_anh {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: 900;
+    font-size: 1.4em;
+}

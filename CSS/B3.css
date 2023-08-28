@@ -1,0 +1,101 @@
+.container {
+    width: 65%;
+    margin: auto;
+    background: rgb(163, 236, 230);
+    padding: 20px;
+    font-size: 1.4em;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.content {
+    border: 1px solid #ccc;
+}
+
+caption {
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: center;
+    /* width: 23%; */
+}
+
+tr td:first-child,
+tr th:first-child {
+    width: 8% !important;
+}
+
+tr td:nth-child(2),
+tr th:nth-child(2) {
+    width: 40% !important;
+    align-items: center !important;
+    /* position: absolute; */
+}
+
+tr td:nth-child(3),
+tr th:nth-child(3) {
+    width: 20% !important;
+    align-items: center !important;
+    /* position: absolute; */
+}
+
+tr td:nth-child(4),
+tr th:nth-child(4) {
+    width: 10% !important;
+    align-items: center !important;
+    /* position: absolute; */
+}
+
+tr td:nth-child(5),
+tr th:nth-child(5) {
+    width: 20% !important;
+    align-items: center !important;
+    /* position: absolute; */
+}
+
+input {
+    width: 55%;
+}
+
+caption {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+button {
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+img {
+    position: relative;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.select_list {
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 20%;
+}
+
+#cart {
+    display: none;
+}

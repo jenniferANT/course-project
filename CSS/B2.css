@@ -1,0 +1,104 @@
+#loi {
+    font-size: 1em;
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+    text-decoration: underline darkturquoise;
+    margin-bottom: 0.5em;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.option-group {
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px;
+}
+
+.option-group>input {
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+}
+
+.option-group>span {
+    margin-left: 4px;
+}
+
+input,
+select {
+    background-color: #fff !important;
+}
+
+.btn {
+    text-transform: uppercase;
+	display: block; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type='radio']:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -0.4em;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='checkbox']:after {
+    width: 12px;
+    height: 12px;
+    top: -0.4em;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -0.4em;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+input[type='checkbox']:checked:after {
+    width: 12px;
+    height: 12px;
+    top: -0.4em;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+form {
+    margin: 15px 0;
+    border-radius: 5px;
+    max-width: 45% !important;
+    width: 45% !important;
+	background-color: #f5f7fb;
+}
+
+@media only screen and (max-width: 700px) {
+  form {
+    max-width: 80% !important;
+    width: 80% !important;
+}
+}

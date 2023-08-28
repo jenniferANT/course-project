@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #bbd1d6;
+    margin: 0;
+    line-height: normal;
+
+}
+
+:root {
+    /* border radiuses */
+    --br-3xs: 10px;
+}
+
+
+.fixed-css {
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 10px;
+    font-size: 36px;
+    color: #333;
+}
+
+.header p {
+    margin: 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.topnav {
+    background-color: #1b8d87;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.topnav a:hover {
+    background-color: #087771;
+    color: #f2f2f2;
+}
+
+.topnav a:last-child {
+    float: right;
+}
+
+/* Tạo hai cột không bằng nhau, float cạnh nhau */
+
+
+/* Cột trái */
+
+.leftcolumn {
+    float: left;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    /* margin-top: 12.5%; */
+}
+
+h2 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+    color: white;
+}
+
+
+/* Cột phải */
+
+.rightcolumn {
+    float: right;
+    width: 25%;
+    background-color: #bbd1d6;
+    padding-left: 20px;
+    /* margin-top: 12.5%; */
+}
+
+.news-title {
+    background-color: rgba(27, 141, 135, 0.2);
+    color: #1b8d87;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+/* định dạng link các nền tảng mạng xã hội */
+
+/* .socials-icons {} */
+
+.socials-icons a {
+    width: 20%;
+}
+
+/* .socials-icons .icon {} */
+
+.socials-icons .icon img {
+    max-width: 20%;
+    width: 15%;
+}
+
+.socials-icons .icon:hover img {
+    -webkit-transform: scale(1.05) translateZ(0);
+    -moz-transform: scale(1.05) translateZ(0);
+    transform: scale(1.05) translateZ(0);
+    transition: opacity .2s ease-in-out, transform .7s, -webkit-transform .7s, -moz-transform .7s;
+}
+
+
+/* định dạng các phương thức liên hệ */
+
+.contact-form {
+    text-align: left !important;
+}
+
+.contact-form h2 {
+    text-align: center !important;
+}
+
+.contact-form .contact-info {
+    margin-left: 10%;
+    line-height: 24px;
+}
+
+.contact-form .contact-info a {
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.contact-form .contact-info a:hover {
+    -webkit-transform: scale(1.05) translateZ(0);
+    -moz-transform: scale(1.05) translateZ(0);
+    transform: scale(1.05) translateZ(0);
+    transition: opacity .2s ease-in-out, transform .7s, -webkit-transform .7s, -moz-transform .7s;
+    color: #1d9bf0;
+    text-decoration: underline;
+}
+
+
+/* Hình ảnh bài viết*/
+
+.images {
+    width: 100%;
+    height: 200px;
+}
+
+.images:hover {
+    -webkit-transform: scale(1.05) translateZ(0);
+    -moz-transform: scale(1.05) translateZ(0);
+    transform: scale(1.05) translateZ(0);
+    transition: opacity .2s ease-in-out, transform .7s, -webkit-transform .7s, -moz-transform .7s;
+}
+
+
+/* Thêm định dạng thẻ nội dung thêm */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* Thêm định dạng thẻ cho bài viết */
+
+.card-news {
+    width: 30%;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    float: left;
+    border-radius: 10px;
+}
+
+.card-news:hover {
+    -webkit-transform: scale(1.05) translateZ(0);
+    -moz-transform: scale(1.05) translateZ(0);
+    transform: scale(1.05) translateZ(0);
+    transition: opacity .2s ease-in-out, transform .7s, -webkit-transform .7s, -moz-transform .7s;
+}
+
+.card-news:hover a {
+    color: #1d9bf0;
+    cursor: pointer;
+}
+
+.card-news a {
+    text-decoration: none;
+    color: #000
+}
+
+.card-news img {
+    border-radius: 10px;
+    /* Đặt bán kính bo tròn cho hình ảnh */
+    max-width: 100%;
+    /* Đảm bảo hình ảnh không vượt quá khung */
+    height: auto;
+    /* Để giữ tỷ lệ khung gốc của hình ảnh */
+}
+
+.card button.custom-button {
+    display: inline-block;
+    background-color: #1b8d87;
+    border: 10px rgba(27, 141, 135, 0.2);
+    margin: 20px 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button.custom-button:hover {
+    background-color: #13766c;
+}
+
+.author {
+    font-weight: 900;
+}
+
+
+/* Clear float khác sau các cột */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.card button.custom-button:hover {
+    background-color: #13766c;
+}
+
+/* Footer */
+
+.footer {
+    padding: 20px 0px;
+    /* text-align: center; */
+    padding-left: 1cm;
+    background: #1b8d87;
+    color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-bottom: 2cm solid #1b8d87;
+}
+
+
+/* Bố cục linh hoạt: các cột xếp chồng lên nhau thay vì cạnh nhau khi màn hình  có chiều rộng dưới 700px */
+
+@media screen and (max-width: 700px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/* Bố cục linh hoạt: Thanh menu điều hướng xếp chồng lên nhau thay vì cạnh nhau khi màn hình có chiều rộng dưới 300px */
+
+@media screen and (max-width: 300px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
